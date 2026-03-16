@@ -21,7 +21,7 @@ h1{
 }
 #esc{
     padding: 5px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(0, 157, 223);
     
@@ -33,7 +33,7 @@ align-items: start;
 }
 #gml{
    color: white; 
-   font-size: 15px;
+   font-size: 10px;
    font-family: Arial, Helvetica, sans-serif; 
    padding: 85px;
    margin-top:-100px;
@@ -108,4 +108,7 @@ p{
 #rv{
 font-size: 28px;
 font-family: Arial, Helvetica, sans-serif;
+}
+rp{
+    color:rgb(0, 157, 223);
 }
