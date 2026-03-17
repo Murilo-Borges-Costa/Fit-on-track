@@ -1,3 +1,52 @@
 body{
     background-color: black;
 }
+.lnh{
+    height: 1px;
+    background-color: rgb(100, 100, 100);
+}
+#logo1{
+   border-radius: 100%; 
+}
+#am{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: auto;
+}
+#flc{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    padding: -20px;
+}
+#flc img{
+    margin-top: 8px;
+}
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    font-size: 20px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 auto;
+   justify-content: center;
+}
+.btn-info{
+    background-color: rgb(0, 157, 223);
+}
+.btn-maior{
+width: 300px;        
+height: 60px;        
+font-size: 20px;
+border-radius: 15px;
+}
+.logCenter{
+    font-size: larger;
+    text-align: center;
+}

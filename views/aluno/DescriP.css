@@ -58,7 +58,7 @@ flex-direction: column;
 }
 #des1{
     color: white;
-    font-size: 28px;
+    font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .btn {
@@ -109,6 +109,6 @@ p{
 font-size: 28px;
 font-family: Arial, Helvetica, sans-serif;
 }
-rp{
+#rp{
     color:rgb(0, 157, 223);
 }
