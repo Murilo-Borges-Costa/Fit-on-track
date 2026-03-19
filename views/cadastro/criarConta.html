@@ -1,33 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar conta</title>
-    <link rel="stylesheet" href="../../public/css.css">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="../../public/styles.css">
 </head>
 <body>
-    <div class="dentro">
-    <h2>Como você deseja se cadastrar?</h2>
-    <a href="../cadastro/informacaopersonal.html">
-    <div class="imgCentro">
-        <h2 class="contaFonte">Personal</h2>
+<main>
+    <!-- Botão Voltar -->
+    <div class="container mt-lg mb-lg">
+        <img src="../../imagens/back.png" alt="Voltar" height="40" width="40" style="cursor: pointer;" />
     </div>
-    </a>
-    <br>
-    <a href="../cadastro/informacaoaluno.html">
-    <div class="imgCentro2">
-        <h2 class="contaFonte">Aluno</h2>
-</div>
-</div>
-</a>
 
+    <!-- Título -->
+    <div class="container text-center mt-2xl mb-2xl">
+        <h2>Como você deseja se cadastrar?</h2>
+    </div>
 
+    <!-- Opções de Cadastro -->
+    <div class="container">
+        <div class="grid grid-2">
+            <!-- Opção Personal -->
+            <a href="../cadastro/informacaopersonal.html" style="text-decoration: none;">
+                <div class="card" style="cursor: pointer; transition: var(--transition);">
+                    <div style="
+                        background: linear-gradient(rgba(0, 157, 223, 0.2), rgba(0, 157, 223, 0.2)), url(../../imagens/OIP.webp);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 250px;
+                        border-radius: var(--radius-md);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    ">
+                        <h3 style="color: var(--color-text); text-shadow: 0 2px 4px rgba(0,0,0,0.5); margin: 0;">Personal Trainer</h3>
+                    </div>
+                </div>
+            </a>
 
-
-    <!-- Importação do JavaScript do bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+            <!-- Opção Aluno -->
+            <a href="../cadastro/informacaoaluno.html" style="text-decoration: none;">
+                <div class="card" style="cursor: pointer; transition: var(--transition);">
+                    <div style="
+                        background: linear-gradient(rgba(0, 157, 223, 0.2), rgba(0, 157, 223, 0.2)), url(../../imagens/download.webp);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 250px;
+                        border-radius: var(--radius-md);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    ">
+                        <h3 style="color: var(--color-text); text-shadow: 0 2px 4px rgba(0,0,0,0.5); margin: 0;">Aluno</h3>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
 </body>
 </html>

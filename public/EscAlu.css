@@ -31,13 +31,16 @@ border-radius: 15%;
     padding: 5px;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(0, 157, 223);
-    margin-top:-150px;
+    color: white;
+    margin-top:-135px;
     margin-left:130px;
+     display: flex;
+    align-items: center;
 }
 #rzc{
     margin-top: 12px;
     gap: 20px;
+     margin-left: auto
 }
 .ft1{
     gap: 20px;

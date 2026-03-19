@@ -1,54 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Info aluno</title>
-    <link rel="stylesheet" href="../../public/css.css">
+    <title>Cadastro - Aluno</title>
+    <link rel="stylesheet" href="../../public/styles.css">
 </head>
 <body>
-    <div class="centro">
-    <div class="input-group flex-nowrap" id="login">
-  <h3>Nome</h3>
-  <input type="text" class="form-control" placeholder="Digite seu nome" aria-label="Username" aria-describedby="addon-wrapping">
- <h3>E-mail</h3>
-<input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="Username" aria-describedby="addon-wrapping">
-<h3>Senha</h3>
-<input type="text" class="form-control" placeholder="Digite sua senha" aria-label="Username" aria-describedby="addon-wrapping">
-<h3>Repita a senha</h3>
-<input type="text" class="form-control" placeholder="Repita sua senha" aria-label="Username" aria-describedby="addon-wrapping">
-<h3>Possui algum problema de saúde?</h3>
-<input type="text" class="form-control" placeholder="Se possui escreva qual" aria-label="Username" aria-describedby="addon-wrapping">
-<h3>Qual é o seu gênero?</h3>
+<main>
+    <!-- Botão Voltar -->
+    <div class="container mt-lg mb-lg">
+        <img src="../../imagens/back.png" alt="Voltar" height="40" width="40" style="cursor: pointer;" />
+    </div>
 
-<select class="form-select form-select-lg mb-3" aria-label="Large select example">
-  <option selected>Escolha</option>
-  <option value="1">Homem</option>
-  <option value="2">Mulher</option>
-  <option value="3">Não sei</option>
-</select>
+    <!-- Formulário -->
+    <div class="container">
+        <div class="form-group">
+            <label class="form-label">Nome</label>
+            <input type="text" class="form-control" placeholder="Digite seu nome">
+        </div>
 
-<h3>Qual é o seu objetivo</h3>
+        <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Digite seu email">
+        </div>
 
-<select class="form-select form-select-lg mb-3" aria-label="Large select example">
-  <option selected>Escolha</option>
-  <option value="1">Perder peso</option>
-  <option value="2">Ganhar massa</option>
-  <option value="3">Saúde</option>
-</select>
+        <div class="form-group">
+            <label class="form-label">Senha</label>
+            <input type="password" class="form-control" placeholder="Digite sua senha">
+        </div>
 
-<div class="logCenter d-grid gap-2 col-6 mx-auto">
-    <br>
-<button class="btn btn-info btn-maior" type="button">Entrar</button>
-</div>
-</div>
-</div>
+        <div class="form-group">
+            <label class="form-label">Repita a Senha</label>
+            <input type="password" class="form-control" placeholder="Repita sua senha">
+        </div>
 
+        <div class="form-group">
+            <label class="form-label">Possui algum problema de saúde?</label>
+            <input type="text" class="form-control" placeholder="Se possui, escreva qual">
+        </div>
 
+        <div class="form-group">
+            <label class="form-label">Qual é o seu gênero?</label>
+            <select class="form-control">
+                <option>Escolha uma opção</option>
+                <option value="1">Homem</option>
+                <option value="2">Mulher</option>
+                <option value="3">Não sei</option>
+            </select>
+        </div>
 
-    <!-- Importação do JavaScript do bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+        <div class="form-group">
+            <label class="form-label">Qual é o seu objetivo?</label>
+            <select class="form-control">
+                <option>Escolha uma opção</option>
+                <option value="1">Perder peso</option>
+                <option value="2">Ganhar massa</option>
+                <option value="3">Saúde</option>
+            </select>
+        </div>
+
+        <div class="text-center mt-xl mb-xl">
+            <button class="btn btn-primary btn-lg" type="button">Cadastrar</button>
+        </div>
+    </div>
+</main>
 </body>
 </html>

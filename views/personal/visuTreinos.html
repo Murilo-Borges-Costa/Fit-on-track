@@ -1,152 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualização do Treino</title>
-    <link rel="stylesheet" href="../../public/vt.css">
-</head>
-<body>
-
-     <!-- logo -->
-    <img
-      src="../../imagens/Logo academia neon verde (3).png"
-      alt=""
-      height="50"
-      width="50"
-      id="logo1"
-    />
-    <div class="lnh"></div>
-    <!--fim logo -->
-    <img src="../../imagens/back.png" alt="" height="50" width="50" id="img" />
-
-    <div class="logCenter d-grid gap-2 col-6 mx-auto">
-      <br />
-      <button class="btn btn-info btn-maior" type="button">Treino A</button>
-    </div>
-
-    <br /><br>
-    <div id="ft"> 
-      <img
-        src="../../imagens/1dotreinoaA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Rosca com barra</h1>
-        <p id="gml">
-          Rep: 10-4
-          <br>
-          Des: 5min
-        </p>
-      </div>
-      </div>
-      <br>
-      <div id="ft"> 
-      <img
-        src="../../imagens/2dotreinoA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Rosca bíceps</h1>
-        <p id="gml">
-          Rep: 10-5
-          <br>
-          Des: 4min
-        </p>
-      </div>
-      </div>
-      <br>
-       <div id="ft"> 
-      <img
-        src="../../imagens/3dotreinoA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Flexão</h1>
-        <p id="gml">
-          Rep: 10-5
-          <br>
-          Des: 6min
-        </p>
-      </div>
-      </div>
-      <br>
-      <div id="ft"> 
-      <img
-        src="../../imagens/4doTreinoaA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Tríceps testa</h1>
-        <p id="gml">
-          Rep: 15-2
-          <br>
-          Des: 10min
-        </p>
-      </div>
-      </div>
-      <br>
-      <div id="ft"> 
-      <img
-        src="../../imagens/5doTreinoA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Barra fixa</h1>
-        <p id="gml">
-          Rep: 15-3
-          <br>
-          Des: 5min
-        </p>
-      </div>
-      </div>
-      <br>
-      
-    <div class="lnh"></div>
-
-    <div class="icons">
-      <div id="icn1">
-        <img src="../../imagens/PERSONAL.png" alt=""  
-        width="50" 
-        height="50"/>
-        <p>Personal</p>
-      </div>
-
-      <div id="icn2">
-        <img src="../../imagens/TREINOS-COLORIDO.png" alt=""  
-        width="50"
-        height="50"
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizar Treino</title>
+    <link rel="stylesheet" href="../../public/styles.css" />
+  </head>
+  <body>
+  <main>
+    <!-- Header com Logo e Voltar -->
+    <header class="container flex-between">
+        <button class="btn btn-secondary">
+            <img src="../../imagens/back.png" alt="Voltar" height="30" width="30" />
+        </button>
+        <img
+            src="../../imagens/Logo academia neon verde (3).png"
+            alt="Logo"
+            height="50"
+            width="50"
+            class="logo-header"
         />
-        <p id="rp">Treinos</p>
-      </div>
+        <div style="width: 40px;"></div>
+    </header>
+    <div class="divider"></div>
 
-      <div id="icn3">
-        <img src="../../imagens/PERFIL.png" alt="" 
-        width="50"
-        height="50" />
-        <p id="cnf">Perfil</p>
-      </div>
+    <!-- Título do Treino -->
+    <div class="container mt-xl">
+        <h2>Treino A</h2>
     </div>
-    
 
-     <!-- Importação do bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <!-- Grid de Exercícios -->
+    <div class="container mt-xl mb-xl">
+        <div class="grid">
+            <!-- Exercício 1 -->
+            <div class="card">
+                <img 
+                    src="../../imagens/1dotreinoaA.gif" 
+                    alt="Rosca com barra" 
+                    class="card-image"
+                />
+                <h4 style="margin: var(--spacing-sm) 0;">Rosca com barra</h4>
+                <p class="text-secondary">Rep: 10-4 | Des: 5min</p>
+            </div>
+
+            <!-- Exercício 2 -->
+            <div class="card">
+                <img 
+                    src="../../imagens/2dotreinoA.gif" 
+                    alt="Rosca bíceps" 
+                    class="card-image"
+                />
+                <h4 style="margin: var(--spacing-sm) 0;">Rosca bíceps</h4>
+                <p class="text-secondary">Rep: 10-5 | Des: 4min</p>
+            </div>
+
+            <!-- Exercício 3 -->
+            <div class="card">
+                <img 
+                    src="../../imagens/3dotreinoA.gif" 
+                    alt="Flexão" 
+                    class="card-image"
+                />
+                <h4 style="margin: var(--spacing-sm) 0;">Flexão</h4>
+                <p class="text-secondary">Rep: 10-5 | Des: 6min</p>
+            </div>
+
+            <!-- Exercício 4 -->
+            <div class="card">
+                <img 
+                    src="../../imagens/4doTreinoaA.gif" 
+                    alt="Tríceps testa" 
+                    class="card-image"
+                />
+                <h4 style="margin: var(--spacing-sm) 0;">Tríceps testa</h4>
+                <p class="text-secondary">Rep: 15-2 | Des: 10min</p>
+            </div>
+
+            <!-- Exercício 5 -->
+            <div class="card">
+                <img 
+                    src="../../imagens/5doTreinoA.gif" 
+                    alt="Barra fixa" 
+                    class="card-image"
+                />
+                <h4 style="margin: var(--spacing-sm) 0;">Barra fixa</h4>
+                <p class="text-secondary">Rep: 15-3 | Des: 5min</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="divider"></div>
+    <nav class="nav-bottom">
+        <div class="nav-icons">
+            <div class="nav-item">
+                <img src="../../imagens/PERSONAL.png" alt="Personal" width="40" height="40"/>
+                <p>Personal</p>
+            </div>
+            <div class="nav-item active">
+                <img src="../../imagens/TREINOS-COLORIDO.png" alt="Treinos" width="40" height="40"/>
+                <p>Treinos</p>
+            </div>
+            <div class="nav-item">
+                <img src="../../imagens/PERFIL.png" alt="Perfil" width="40" height="40"/>
+                <p>Perfil</p>
+            </div>
+        </div>
+    </nav>
+  </main>
+  </body>
+</html>
 </body>
 </html>

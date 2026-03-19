@@ -1,145 +1,144 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio Personal</title>
-    <link rel="stylesheet" href="../../public/IniPerso.css" />
+    <title>Meus Alunos</title>
+    <link rel="stylesheet" href="../../public/styles.css" />
   </head>
   <body>
-    <!-- Logo -->
-    <img
-      src="../../imagens/Logo academia neon verde (3).png"
-      alt=""
-      height="50"
-      width="50"
-      id="logo1"
-    />
-    <div class="lnh"></div>
-    <!-- fim da logo -->
-
-    <h1 id="am">Meus Alunos</h1>
-    <div id="flc">
-      <p>Adicionar</p>
-      <img src="../../imagens/add.png" alt="" height="30" width="30" id="cor" />
-    </div>
-    <br /><br />
-
-    <div id="ft">
-      <img
-        src="../../imagens/8854187dba319e1d6a6592e1daa82c44774c5cca.jpg"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Thiago Moreira</h1>
-        <p id="gml">
-          <br />
-          Perder peso
-        </p>
-      </div>
-    </div>
-    <br />
-    <div id="ft">
-      <img
-        src="../../imagens/b064c1e64cc2e06bdc13973aae9757bf75ffece8.jpg"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Mariana Costa Oliveira</h1>
-        <p id="gml">
-          <br />
-          Ganhar massa
-        </p>
-      </div>
-    </div>
-    <br />
-    <div id="ft">
-      <img
-        src="../../imagens/57169d9c3159f9d75cb8a4ac57e9d09a4678b5f6.jpg"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Rafael Nogueira Pinto</h1>
-        <p id="gml">
-          <br />
-          Ganhar músculos
-        </p>
-      </div>
-    </div>
-    <br />
-    <div id="ft">
-      <img
-        src="../../imagens/PerfildoAluno.png"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Beatriz Borges Barreto</h1>
-        <p id="gml">
-          <br />
-          Perder peso e definir
-        </p>
-      </div>
-    </div>
-    <br />
-    <div id="ft">
-      <img
-        src="../../imagens/41369931420230e07b31f7e13df14afdd961f8ff.jpg"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Camila Rocha Menezes</h1>
-        <p id="gml">
-          <br />
-          Melhorar a saúde
-        </p>
-      </div>
-    </div>
-    <br />
-
-    <div class="lnh"></div>
-
-    <div class="icons">
-      <div id="icn1">
+  <main>
+    <!-- Header com Logo -->
+    <header class="container flex-between">
         <img
-          src="../../imagens/PERSONAL-COLORIDO.png"
-          alt=""
-          width="50"
-          height="50"
+            src="../../imagens/Logo academia neon verde (3).png"
+            alt="Logo"
+            height="50"
+            width="50"
+            class="logo-header"
         />
-        <p id="rma">Alunos</p>
-      </div>
+    </header>
+    <div class="divider"></div>
 
-      <div id="icn2">
-        <img src="../../imagens/TREINOS.png" alt="" width="50" height="50" />
-        <p id="rp">Treinos</p>
-      </div>
-
-      <div id="icn3">
-        <img src="../../imagens/PERFIL.png" alt="" width="50" height="50" />
-        <p id="cnf">Perfil</p>
-      </div>
+    <!-- Título e Botão Adicionar -->
+    <div class="container mt-xl">
+        <div class="flex-between">
+            <h2>Meus Alunos</h2>
+            <div class="flex gap-md">
+                <p>Adicionar</p>
+                <img src="../../imagens/add.png" alt="Adicionar" height="30" width="30" />
+            </div>
+        </div>
     </div>
 
-    <!-- Importação do bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Lista de Alunos RESPONSIVA -->
+    <div class="container mt-xl">
+        <div class="grid">
+            <!-- Aluno 1 -->
+            <div class="card">
+                <div class="flex-center gap-md" style="flex-direction: column;">
+                    <img
+                        src="../../imagens/8854187dba319e1d6a6592e1daa82c44774c5cca.jpg"
+                        alt="Aluno"
+                        height="120"
+                        width="120"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                    <div class="text-center">
+                        <h3 class="mb-sm">Thiago Moreira</h3>
+                        <p class="mt-0">Perder peso</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aluno 2 -->
+            <div class="card">
+                <div class="flex-center gap-md" style="flex-direction: column;">
+                    <img
+                        src="../../imagens/b064c1e64cc2e06bdc13973aae9757bf75ffece8.jpg"
+                        alt="Aluno"
+                        height="120"
+                        width="120"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                    <div class="text-center">
+                        <h3 class="mb-sm">Mariana Costa Oliveira</h3>
+                        <p class="mt-0">Ganhar massa</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aluno 3 -->
+            <div class="card">
+                <div class="flex-center gap-md" style="flex-direction: column;">
+                    <img
+                        src="../../imagens/57169d9c3159f9d75cb8a4ac57e9d09a4678b5f6.jpg"
+                        alt="Aluno"
+                        height="120"
+                        width="120"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                    <div class="text-center">
+                        <h3 class="mb-sm">Rafael Nogueira Pinto</h3>
+                        <p class="mt-0">Ganhar músculos</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aluno 4 -->
+            <div class="card">
+                <div class="flex-center gap-md" style="flex-direction: column;">
+                    <img
+                        src="../../imagens/PerfildoAluno.png"
+                        alt="Aluno"
+                        height="120"
+                        width="120"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                    <div class="text-center">
+                        <h3 class="mb-sm">Beatriz Borges Barreto</h3>
+                        <p class="mt-0">Perder peso e definir</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aluno 5 -->
+            <div class="card">
+                <div class="flex-center gap-md" style="flex-direction: column;">
+                    <img
+                        src="../../imagens/41369931420230e07b31f7e13df14afdd961f8ff.jpg"
+                        alt="Aluno"
+                        height="120"
+                        width="120"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                    <div class="text-center">
+                        <h3 class="mb-sm">Camila Rocha Menezes</h3>
+                        <p class="mt-0">Melhorar a saúde</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="divider"></div>
+    <nav class="nav-bottom">
+        <div class="nav-icons">
+            <div class="nav-item active">
+                <img src="../../imagens/PERSONAL-COLORIDO.png" alt="Alunos" width="40" height="40"/>
+                <p>Alunos</p>
+            </div>
+            <div class="nav-item">
+                <img src="../../imagens/TREINOS.png" alt="Treinos" width="40" height="40"/>
+                <p>Treinos</p>
+            </div>
+            <div class="nav-item">
+                <img src="../../imagens/PERFIL.png" alt="Perfil" width="40" height="40"/>
+                <p>Perfil</p>
+            </div>
+        </div>
+    </nav>
+  </main>
   </body>
 </html>

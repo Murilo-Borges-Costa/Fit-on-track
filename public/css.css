@@ -121,3 +121,9 @@ select{
 .dentro{
     text-align: center;
 }
+#img{
+    text-align:right;
+    justify-content:right;
+    padding: 10px;
+border-radius: 15%;
+}

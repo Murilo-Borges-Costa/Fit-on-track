@@ -1,205 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Treinos</title>
-    <link rel="stylesheet" href="../../public/CriarT.css">
+    <link rel="stylesheet" href="../../public/styles.css">
 </head>
 <body>
-   <!-- logo -->
-    <img
-      src="../../imagens/Logo academia neon verde (3).png"
-      alt=""
-      height="50"
-      width="50"
-      id="logo1"
-    />
-    <div class="lnh"></div>
-      <img
-        src="../../imagens/back.png"
-        alt=""
-        height="50"
-        width="50"
-        id="img"
-      />
-      <!-- fim da logo -->  
-      <div class="edt">
-      <h3>Dê um Titulo:</h3>
-      <div id="rb">
-        <p></p>
-      </div>
-
-      <br>
-
-      <div id="ft"> 
-      <img
-        src="../../imagens/1dotreinoaA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Rosca com barra 
-          <img
-        src="../../imagens/circled-dot.png"
-        alt=""
-        height="20"
-        width="20"
-        id="rzc"
-      />
-        </h1>
-        <p id="gml">
-          Rep: 10-4
-          <br>
-          Des: 5min
-        </p>
-      </div>
-      </div>
-      <br>
-      <div id="ft"> 
-      <img
-        src="../../imagens/2dotreinoA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Rosca bíceps
-           <img
-        src="../../imagens/circled-dot.png"
-        alt=""
-        height="20"
-        width="20"
-        id="rzc"
-      />
-        </h1>
-        <p id="gml">
-          Rep: 10-5
-          <br>
-          Des: 4min
-        </p>
-      </div>
-      </div>
-      <br>
-       <div id="ft"> 
-      <img
-        src="../../imagens/3dotreinoA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Flexão
-           <img
-        src="../../imagens/circled-dot.png"
-        alt=""
-        height="20"
-        width="20"
-        id="rzc"
-      />
-        </h1>
-        <p id="gml">
-          Rep: 10-5
-          <br>
-          Des: 6min
-        </p>
-      </div>
-      </div>
-      <br>
-      <div id="ft"> 
-      <img
-        src="../../imagens/4doTreinoaA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Tríceps testa 
-           <img
-        src="../../imagens/circled-dot.png"
-        alt=""
-        height="20"
-        width="20"
-        id="rzc"
-      />
-        </h1>
-        <p id="gml">
-          Rep: 15-2
-          <br>
-          Des: 10min
-        </p>
-      </div>
-      </div>
-      <br>
-      <div id="ft"> 
-      <img
-        src="../../imagens/5doTreinoA.gif"
-        alt=""
-        height="120"
-        width="120"
-        id="img"
-      />
-      <div class="ft1">
-        <h1 id="esc">Barra fixa 
-           <img
-        src="../../imagens/circled-dot.png"
-        alt=""
-        height="20"
-        width="20"
-        id="rzc"
-      />
-        </h1>
-        <p id="gml">
-          Rep: 15-3
-          <br>
-          Des: 5min
-        </p>
-      </div>
-      </div>
-      <div class="logCenter d-grid gap-2 col-6 mx-auto">
-      <br />
-      <button class="btn btn-info btn-maior" type="button">
-       Salvar
-      </button>
-
-      <br><br>
-
-      <div class="lnh"></div>
-
-
-    <div class="icons">
-      <div id="icn1">
-        <img src="../../imagens/PERSONAL.png" alt=""  
-        width="50" 
-        height="50"/>
-        <p id="rma">Alunos</p>
-      </div>
-
-      <div id="icn2">
-        <img src="../../imagens/TREINOS-COLORIDO.png" alt=""  
-        width="50"
-        height="50"
+<main>
+    <!-- Header com Logo e Botão Voltar -->
+    <header class="container flex-between">
+        <img
+            src="../../imagens/Logo academia neon verde (3).png"
+            alt="Logo"
+            height="50"
+            width="50"
+            class="logo-header"
         />
-        <p id="rp">Treinos</p>
-      </div>
+        <img src="../../imagens/back.png" alt="Voltar" height="30" width="30" style="cursor: pointer;" />
+    </header>
+    <div class="divider"></div>
 
-      <div id="icn3">
-        <img src="../../imagens/PERFIL.png" alt="" 
-        width="50"
-        height="50" />
-        <p id="cnf">Perfil</p>
-      </div>
+    <!-- Formulário de Treino -->
+    <div class="container mt-xl">
+        <div class="form-group">
+            <h3 style="text-align: center;">Dê um Título:</h3>
+            <input type="text" class="form-control" placeholder="Nome do treino">
+        </div>
     </div>
-    
 
-     <!-- Importação do bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+    <!-- Grid de Exercícios -->
+    <div class="container mt-xl">
+        <h3 style="text-align: center; margin-bottom: var(--spacing-lg);">Exercícios</h3>
+        
+        <div class="grid">
+            <!-- Exercício 1 -->
+            <div class="card">
+                <div class="text-center mb-md">
+                    <img
+                        src="../../imagens/1dotreinoaA.gif"
+                        alt="Exercício"
+                        height="100"
+                        width="100"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                </div>
+                <div class="text-center">
+                    <h3 style="margin-bottom: var(--spacing-sm);">
+                        Rosca com barra
+                        <img src="../../imagens/circled-dot.png" alt="" height="16" width="16" style="margin-left: var(--spacing-sm);" />
+                    </h3>
+                    <p class="text-left">
+                        <strong>Rep:</strong> 10-4<br/>
+                        <strong>Des:</strong> 5min
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercício 2 -->
+            <div class="card">
+                <div class="text-center mb-md">
+                    <img
+                        src="../../imagens/2dotreinoA.gif"
+                        alt="Exercício"
+                        height="100"
+                        width="100"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                </div>
+                <div class="text-center">
+                    <h3 style="margin-bottom: var(--spacing-sm);">
+                        Rosca bíceps
+                        <img src="../../imagens/circled-dot.png" alt="" height="16" width="16" style="margin-left: var(--spacing-sm);" />
+                    </h3>
+                    <p class="text-left">
+                        <strong>Rep:</strong> 10-5<br/>
+                        <strong>Des:</strong> 4min
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercício 3 -->
+            <div class="card">
+                <div class="text-center mb-md">
+                    <img
+                        src="../../imagens/3dotreinoA.gif"
+                        alt="Exercício"
+                        height="100"
+                        width="100"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                </div>
+                <div class="text-center">
+                    <h3 style="margin-bottom: var(--spacing-sm);">
+                        Flexão
+                        <img src="../../imagens/circled-dot.png" alt="" height="16" width="16" style="margin-left: var(--spacing-sm);" />
+                    </h3>
+                    <p class="text-left">
+                        <strong>Rep:</strong> 10-5<br/>
+                        <strong>Des:</strong> 6min
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercício 4 -->
+            <div class="card">
+                <div class="text-center mb-md">
+                    <img
+                        src="../../imagens/4doTreinoaA.gif"
+                        alt="Exercício"
+                        height="100"
+                        width="100"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                </div>
+                <div class="text-center">
+                    <h3 style="margin-bottom: var(--spacing-sm);">
+                        Tríceps testa
+                        <img src="../../imagens/circled-dot.png" alt="" height="16" width="16" style="margin-left: var(--spacing-sm);" />
+                    </h3>
+                    <p class="text-left">
+                        <strong>Rep:</strong> 15-2<br/>
+                        <strong>Des:</strong> 10min
+                    </p>
+                </div>
+            </div>
+
+            <!-- Exercício 5 -->
+            <div class="card">
+                <div class="text-center mb-md">
+                    <img
+                        src="../../imagens/5doTreinoA.gif"
+                        alt="Exercício"
+                        height="100"
+                        width="100"
+                        style="border-radius: var(--radius-md); object-fit: cover;"
+                    />
+                </div>
+                <div class="text-center">
+                    <h3 style="margin-bottom: var(--spacing-sm);">
+                        Barra fixa
+                        <img src="../../imagens/circled-dot.png" alt="" height="16" width="16" style="margin-left: var(--spacing-sm);" />
+                    </h3>
+                    <p class="text-left">
+                        <strong>Rep:</strong> 15-3<br/>
+                        <strong>Des:</strong> 5min
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão Salvar -->
+    <div class="container text-center mt-xl mb-xl">
+        <button class="btn btn-primary btn-lg" type="button">Salvar</button>
+    </div>
+
+    <!-- Footer Navigation -->
+    <div class="divider"></div>
+    <nav class="nav-bottom">
+        <div class="nav-icons">
+            <div class="nav-item">
+                <img src="../../imagens/PERSONAL.png" alt="Alunos" width="40" height="40"/>
+                <p>Alunos</p>
+            </div>
+            <div class="nav-item active">
+                <img src="../../imagens/TREINOS-COLORIDO.png" alt="Treinos" width="40" height="40"/>
+                <p>Treinos</p>
+            </div>
+            <div class="nav-item">
+                <img src="../../imagens/PERFIL.png" alt="Perfil" width="40" height="40"/>
+                <p>Perfil</p>
+            </div>
+        </div>
+    </nav>
+</main>
 </body>
 </html>

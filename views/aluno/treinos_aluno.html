@@ -1,94 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meus Treinos</title>
-    <link rel="stylesheet" href="../../public/TrnsdAL.css">
+    <link rel="stylesheet" href="../../public/styles.css">
 </head>
 <body>
-<!-- Logo -->
-    <img
-      src="../../imagens/Logo academia neon verde (3).png"
-      alt=""
-      height="50"
-      width="50"
-      id="logo1"
-    />
-    <div class="lnh"></div>
-    <!-- fim da logo -->
-<h1 id="tt">Meus treinos</h1>
-
-     <div class="logCenter d-grid gap-2 col-6 mx-auto">
-      <br />
-      <button class="btn btn-info btn-maior" type="button">
-       Treino A
+<main>
+    <!-- Header com Logo -->
+    <header class="container flex-between">
         <img
-          src="../../imagens/visualizar.png"
-          alt=""
-          height="20"
-          width="20"
+            src="../../imagens/Logo academia neon verde (3).png"
+            alt="Logo"
+            height="50"
+            width="50"
+            class="logo-header"
         />
-      </button>
+    </header>
+    <div class="divider"></div>
 
-      <div class="logCenter d-grid gap-2 col-6 mx-auto">
-      <br />
-      <button class="btn btn-info btn-maior" type="button">
-       Treino B
-        <img
-          src="../../imagens/visualizar.png"
-          alt=""
-          height="20"
-          width="20"
-        />
-      </button>
-
-      <div class="logCenter d-grid gap-2 col-6 mx-auto">
-      <br />
-      <button class="btn btn-info btn-maior" type="button">
-       Treino C
-        <img
-          src="../../imagens/visualizar.png"
-          alt=""
-          height="20"
-          width="20"
-        />
-      </button>
-
-      <br><br><br><br><br><br><br>
-<!-- footer -->
-
-   
-  <br /><br /><br /><br><br><br>
-
-   <div class="lnh"></div>
-   <div class="esp">
-
-  <div class="icons">
-    <div id="icn1">
-      <img src="../../imagens/PERSONAL.png" alt=""  
-      width="47" 
-      height="47"/>
-      <p>Personal</p>
+    <!-- Título -->
+    <div class="container text-center mt-2xl">
+        <h2>Meus Treinos</h2>
     </div>
-      <div id="icn2">
-        <img src="../../imagens/TREINOS-COLORIDO.png" alt=""  
-        width="47"
-        height="47"
-        />
-        <p id="rp">Treinos</p>
-      </div>
-      <div id="icn3">
-        <img src="../../imagens/PERFIL.png" alt="" 
-        width="47"
-        height="47" />
-        <p id="cnf">Perfil</p>
-      </div>
-      </div>
+
+    <!-- Grid de Treinos -->
+    <div class="container mt-xl">
+        <div class="grid">
+            <button class="btn btn-primary btn-lg btn-block">
+                Treino A
+                <img
+                    src="../../imagens/visualizar.png"
+                    alt=""
+                    height="20"
+                    width="20"
+                />
+            </button>
+
+            <button class="btn btn-primary btn-lg btn-block">
+                Treino B
+                <img
+                    src="../../imagens/visualizar.png"
+                    alt=""
+                    height="20"
+                    width="20"
+                />
+            </button>
+
+            <button class="btn btn-primary btn-lg btn-block">
+                Treino C
+                <img
+                    src="../../imagens/visualizar.png"
+                    alt=""
+                    height="20"
+                    width="20"
+                />
+            </button>
+        </div>
     </div>
-    <!-- Importação do JavaScript do bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
+
+    <!-- Footer Navigation -->
+    <div class="divider"></div>
+    <nav class="nav-bottom">
+        <div class="nav-icons">
+            <div class="nav-item">
+                <img src="../../imagens/PERSONAL.png" alt="Personal" width="40" height="40"/>
+                <p>Personal</p>
+            </div>
+            <div class="nav-item active">
+                <img src="../../imagens/TREINOS-COLORIDO.png" alt="Treinos" width="40" height="40"/>
+                <p>Treinos</p>
+            </div>
+            <div class="nav-item">
+                <img src="../../imagens/PERFIL.png" alt="Perfil" width="40" height="40"/>
+                <p>Perfil</p>
+            </div>
+        </div>
+    </nav>
+</main>
 </body>
 </html>
