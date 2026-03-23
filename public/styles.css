@@ -127,6 +127,12 @@ p {
 /* Flexbox helpers */
 .flex {
   display: flex;
+ 
+}
+.flx{
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 
 .flex-center {
@@ -351,11 +357,13 @@ header {
 }
 
 .form-label {
+  text-align: start;
   display: block;
-  color: var(--color-text);
-  font-size: var(--font-size-base);
+  font-size: 20px;
   margin-bottom: var(--spacing-sm);
   font-weight: 500;
+  color: #0081b4;
+  
 }
 
 .form-control {
@@ -547,13 +555,15 @@ select {
 .text-center {
   text-align: center;
 }
-
 .text-left {
   text-align: left;
 }
 
 .text-right {
   text-align: right;
+}
+.rsc{
+  text-align: start;
 }
 
 .mt-sm { margin-top: var(--spacing-sm); }
