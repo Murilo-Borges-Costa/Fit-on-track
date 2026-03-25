@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicial</title>
+    <title>Recuperar Senha</title>
     <link rel="stylesheet" href="../../public/styles.css" />
   </head>
   <body>
@@ -28,21 +28,25 @@
               placeholder="Digite seu e-mail"
             />
           </div>
+        </div>
+      </div>
+      <div class="container text-center mt-2xl">
+        <div id="login" class="text-center">
           <div class="form-group">
-            <label class="form-label">Senha</label>
+            <label class="form-label">Nova senha</label>
             <input
               type="password"
               class="form-control"
-              placeholder="Digite sua senha"
+              placeholder="Digite sua nova senha"
             />
-            <div class="form-group">
-              <a
-                href="../cadastro/newsenha.html"
-                style="text-decoration: none; color: var(--color-primary)"
-              >
-                <h3>Esqueceu sua senha?</h3>
-              </a>
-            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Confirmar nova senha</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Confirme sua nova senha"
+            />
           </div>
         </div>
       </div>
@@ -50,16 +54,14 @@
       <!-- botão entrar -->
       <div class="container text-center mt-xl">
         <button class="btn btn-primary btn-lg btn-block" type="button">
-          Entrar
+          Redefinir Senha
         </button>
-        <div class="mt-lg">
-          <a
-            href="../cadastro/criarConta.html"
-            style="text-decoration: none; color: var(--color-primary)"
-          >
-            <h3>Criar conta</h3>
-          </a>
-        </div>
+
+        <a
+          href="../cadastro/inicial.html"
+          style="text-decoration: none; color: var(--color-primary)"
+        >
+        </a>
       </div>
     </main>
   </body>
